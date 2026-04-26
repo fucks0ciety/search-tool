@@ -14,7 +14,7 @@ SEARCH = """
         SSSS SSSS    EEEEEEEE   AAAA         AAAA   RRRR    RRRR       CCCCCCCCCCCC     HHHHH      HHHHH            
          SSSSSS      EEEEEEEE   AAAA         AAAA   RRRR     RRRR       CCCCCCCCCC      HHHHH      HHHHH     
 
-VERSION: 1.0
+VERSION: 1.1
 
 """
 
