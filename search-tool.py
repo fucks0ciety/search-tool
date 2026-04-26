@@ -1,19 +1,18 @@
-import os
 import time
 
 SEARCH = """
-                                                                                                                  ?????         
-         SSSSSS      EEEEEEEE        AAAAAAA        RRRRRRRRRRR          CCCCCCCCC      HHHHH      HHHHH         ????????       
-        SSSS SSSS    EEEEEEEE       AAAAAAAAA       RRRRRRRRRRRR        CCCCCCCCCCC     HHHHH      HHHHH        ???   ????      
-       SSSS   SSSS   EEE            AAAAAAAAA       RRRR    RRRR       CCCC     CCCC    HHHHH      HHHHH       ???     ????     
-       SSSS          EEE           AAAA   AAAA      RRRR     RRRR     CCCC       CCCC   HHHHH      HHHHH       ???    ????      
-        SSSS         EEEEEEEE      AAAA   AAAA      RRRR     RRRR    CCCC               HHHHHHHHHHHHHHHH              ????          
-          SSSS       EEEEEEEE     AAAA     AAAA     RRRRRRRRRRR      CCCC               HHHHHHHHHHHHHHHH             ????       
-            SSSS     EEEEEEEE     AAAAAAAAAAAAA     RRRRRRRRR        CCCC               HHHHHHHHHHHHHHHH           ????         
-             SSSS    EEE         AAAAAAAAAAAAAAA    RRRR   RRRR      CCCC        CCCC   HHHHH      HHHHH          ????          
-       SSSS   SSSS   EEE         AAAA       AAAA    RRRR    RRRR      CCCC      CCCC    HHHHH      HHHHH                        
-        SSSS SSSS    EEEEEEEE   AAAA         AAAA   RRRR    RRRR       CCCCCCCCCCCC     HHHHH      HHHHH         @@@            
-         SSSSSS      EEEEEEEE   AAAA         AAAA   RRRR     RRRR       CCCCCCCCCC      HHHHH      HHHHH         @@@     
+         
+         SSSSSS      EEEEEEEE        AAAAAAA        RRRRRRRRRRR          CCCCCCCCC      HHHHH      HHHHH       
+        SSSS SSSS    EEEEEEEE       AAAAAAAAA       RRRRRRRRRRRR        CCCCCCCCCCC     HHHHH      HHHHH            
+       SSSS   SSSS   EEE            AAAAAAAAA       RRRR    RRRR       CCCC     CCCC    HHHHH      HHHHH          
+       SSSS          EEE           AAAA   AAAA      RRRR     RRRR     CCCC       CCCC   HHHHH      HHHHH      
+        SSSS         EEEEEEEE      AAAA   AAAA      RRRR     RRRR    CCCC               HHHHHHHHHHHHHHHH          
+          SSSS       EEEEEEEE     AAAA     AAAA     RRRRRRRRRRR      CCCC               HHHHHHHHHHHHHHHH       
+            SSSS     EEEEEEEE     AAAAAAAAAAAAA     RRRRRRRRR        CCCC               HHHHHHHHHHHHHHHH         
+             SSSS    EEE         AAAAAAAAAAAAAAA    RRRR   RRRR      CCCC        CCCC   HHHHH      HHHHH          
+       SSSS   SSSS   EEE         AAAA       AAAA    RRRR    RRRR      CCCC      CCCC    HHHHH      HHHHH                    
+        SSSS SSSS    EEEEEEEE   AAAA         AAAA   RRRR    RRRR       CCCCCCCCCCCC     HHHHH      HHHHH            
+         SSSSSS      EEEEEEEE   AAAA         AAAA   RRRR     RRRR       CCCCCCCCCC      HHHHH      HHHHH     
 
 VERSION: 1.0
 
@@ -38,7 +37,7 @@ def search_file():
                 count += 1
                 if word in line:
                     count_words +=1
-                    print(f"line:{count} -> {line}", end="")
+                    print(f"line:{count} ==> {line}", end="")
             print(f"all:{count_words}")
     except Exception as e:
         print(f"error: {e}")
